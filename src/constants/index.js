@@ -93,7 +93,7 @@ export const projects = [
     description:
       "A full-stack grocery platform with product browsing, cart management, ordering, inventory, delivery tracking, OTP verification, Stripe payments, and automated workflows using Inngest.",
     href: "https://your-mart-by-nish.vercel.app/",
-    image: "/assets/projects/mobile-accessories-store.jpg",
+    image: "/assets/projects/project1.png",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "React.js" },
@@ -110,7 +110,7 @@ export const projects = [
     description:
       "An interactive platform for DSA algorithm visualization with an integrated chatbot for student assistance and enhanced conceptual learning.",
     href: "https://vermaji2077.github.io/dsa/",
-    image: "/assets/projects/game-store.jpg",
+    image: "/assets/projects/project2.png",
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
       { id: 1, name: "JavaScript" },
@@ -125,7 +125,7 @@ export const projects = [
     description:
       "A full-stack web platform for visa appointment booking, user registration, consultancy service management, and client package tracking.",
     href: "https://github.com/Vermaji2077/aviation",
-    image: "/assets/projects/apple-tech-store.jpg",
+    image: "/assets/projects/project3.png",
     bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
       { id: 1, name: "React.js" },
