@@ -69,36 +69,36 @@ const Certifications = () => {
           <div
             ref={(el) => (itemRefs.current[index] = el)}
             key={index}
-            className="px-1 sm:px-1 md:px-3 lg:px-6 pt-8 pb-12 text-white bg-black border-t-2 border-white/30 ultra-small-screen"
+            className="px-4 sm:px-6 md:px-8 lg:px-12 pt-8 pb-12 text-white bg-black border-t-2 border-white/30"
           >
             <div className="flex flex-col gap-3 sm:gap-4 md:gap-6">
               {/* Header: Title & Period */}
               <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl text-white">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white">
                   {item.title}
                 </h2>
-                <span className="text-sm md:text-base text-gold font-light tracking-widest uppercase flex-shrink-0">
+                <span className="text-xs sm:text-sm md:text-base text-gold font-light tracking-widest uppercase flex-shrink-0">
                   {item.period}
                 </span>
               </div>
 
               {/* Organization & Domain */}
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xl md:text-2xl text-white/60 tracking-wider">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-lg sm:text-xl md:text-2xl text-white/60 tracking-wider">
                 <p>{item.organization}</p>
-                <span className="text-sm md:text-base text-white/40 font-mono tracking-normal">
+                <span className="text-xs sm:text-sm md:text-base text-white/40 font-mono tracking-normal break-words">
                   {item.domain}
                 </span>
               </div>
 
               {/* Highlight list */}
-              <div className="flex flex-col gap-1 sm:gap-2 md:gap-3 text-lg md:text-xl text-white/80 mt-2">
+              <div className="flex flex-col gap-2 sm:gap-3 text-base sm:text-lg md:text-xl text-white/80 mt-2">
                 {item.highlights.map((highlight, hIndex) => (
                   <div key={`cert-${index}-${hIndex}`} className="w-full">
                     <div className="flex items-start w-full">
-                      <span className="mr-8 md:mr-12 text-base text-white/30 flex-shrink-0 mt-0.5">
+                      <span className="mr-4 sm:mr-8 md:mr-12 text-sm sm:text-base text-white/30 flex-shrink-0 mt-0.5">
                         0{hIndex + 1}
                       </span>
-                      <span className="flex-1 font-light text-white/70 leading-relaxed">
+                      <span className="flex-1 font-light text-white/70 leading-relaxed text-sm sm:text-base md:text-lg">
                         {highlight}
                       </span>
                     </div>
@@ -117,4 +117,3 @@ const Certifications = () => {
 };
 
 export default Certifications;
-

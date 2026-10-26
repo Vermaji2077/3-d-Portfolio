@@ -31,13 +31,14 @@ const ContactSummary = () => {
       },
     });
   }, []);
+
   return (
     <section
       ref={containerRef}
-      className="flex flex-col items-center justify-between min-h-screen gap-12 mt-16"
+      className="flex flex-col items-center justify-between min-h-screen gap-8 md:gap-12 py-8 md:py-16 mt-8 md:mt-16"
     >
       <Marquee items={items} />
-      <div className="overflow-hidden font-light text-center contact-text-responsive">
+      <div className="overflow-hidden font-light text-center px-4 contact-text-responsive leading-snug">
         <p>
           “ Let’s build a <br />
           <span className="font-normal">scalable</span> &{" "}

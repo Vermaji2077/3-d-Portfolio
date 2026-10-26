@@ -121,7 +121,7 @@ const Navbar = () => {
       {/* Sleek, compact navigation drawer matching website theme */}
       <nav
         ref={navRef}
-        className="fixed top-0 right-0 z-50 flex flex-col justify-between w-full sm:w-[320px] md:w-[350px] h-full px-8 py-8 bg-black text-white border-l border-white/20 shadow-2xl overflow-y-auto"
+        className="fixed top-0 right-0 z-50 flex flex-col justify-between w-full sm:w-[320px] md:w-[350px] max-w-full h-full px-6 sm:px-8 py-6 sm:py-8 bg-black text-white border-l border-white/20 shadow-2xl overflow-y-auto"
       >
         {/* Top title bar (Single burger toggle sits at top-right; no duplicate close button) */}
         <div className="flex items-center justify-between border-b border-white/20 pb-4 pr-12">
@@ -214,7 +214,7 @@ const Navbar = () => {
 
       {/* The single floating toggle button (open/close) */}
       <div
-        className="fixed z-50 flex flex-col items-center justify-center gap-1.5 transition-all duration-200 bg-black text-white border border-white/30 rounded-full cursor-pointer shadow-lg hover:border-gold w-11 h-11 md:w-12 md:h-12 top-5 right-6 md:top-6 md:right-8"
+        className="fixed z-50 flex flex-col items-center justify-center gap-1.5 transition-all duration-200 bg-black text-white border border-white/30 rounded-full cursor-pointer shadow-lg hover:border-gold w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 top-4 right-4 sm:top-5 sm:right-6 md:top-6 md:right-8"
         onClick={toggleMenu}
         aria-label="Toggle Navigation"
         style={

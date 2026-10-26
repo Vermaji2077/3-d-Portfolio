@@ -13,15 +13,15 @@ const Works = () => {
     seamless performance and reliability.`;
 
   useGSAP(() => {
-    gsap.from("#project", {
-      y: 100,
+    gsap.from(".project-item", {
+      y: 80,
       opacity: 0,
-      delay: 0.5,
-      duration: 1,
-      stagger: 0.3,
-      ease: "back.out",
+      delay: 0.2,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.out",
       scrollTrigger: {
-        trigger: "#project",
+        trigger: ".project-item",
       },
     });
   }, []);
@@ -73,11 +73,10 @@ const Works = () => {
         {projects.map((project, index) => (
           <a
             key={project.id}
-            id="project"
             href={project.href || "#"}
             target={project.href ? "_blank" : undefined}
             rel={project.href ? "noopener noreferrer" : undefined}
-            className="relative flex flex-col gap-1 py-5 cursor-pointer group md:gap-0 no-underline"
+            className="project-item relative flex flex-col gap-1 py-4 md:py-5 cursor-pointer group md:gap-0 no-underline"
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave(index)}
           >
@@ -90,19 +89,19 @@ const Works = () => {
             />
 
             {/* title */}
-            <div className="flex justify-between px-1 sm:px-1 md:px-3 lg:px-6 text-black transition-all duration-500 md:group-hover:px-12 md:group-hover:text-white ultra-small-screen">
-              <h2 className="lg:text-[32px] text-[26px] leading-none">
+            <div className="flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12 text-black transition-all duration-500 md:group-hover:px-14 md:group-hover:text-white">
+              <h2 className="text-xl sm:text-2xl md:text-[28px] lg:text-[32px] leading-snug flex-1 pr-3">
                 {project.name}
               </h2>
               <Icon
                 icon="lucide:arrow-up-right"
-                className="md:size-6 size-5"
+                className="size-5 md:size-6 flex-shrink-0"
               />
             </div>
             {/* divider */}
-            <div className="w-full h-0.5 bg-black/80" />
+            <div className="w-full h-0.5 bg-black/80 my-1" />
             {/* framework */}
-            <div className="flex px-1 sm:px-1 md:px-3 lg:px-6 text-xs leading-loose uppercase transition-all duration-500 md:text-sm gap-x-5 md:group-hover:px-12 ultra-small-screen">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 px-4 sm:px-6 md:px-8 lg:px-12 text-xs sm:text-sm leading-loose uppercase transition-all duration-500 md:group-hover:px-14">
               {project.frameworks.map((framework) => (
                 <p
                   key={framework.id}
@@ -113,17 +112,19 @@ const Works = () => {
               ))}
             </div>
             {/* mobile preview image */}
-            <div className="relative flex items-center justify-center px-1 sm:px-1 md:px-3 lg:px-6 md:hidden h-[400px] ultra-small-screen">
-              <img
-                src={project.bgImage}
-                alt={`${project.name}-bg-image`}
-                className="object-cover w-full h-full rounded-md brightness-50"
-              />
-              <img
-                src={project.image}
-                alt={`${project.name}-image`}
-                className="absolute bg-center px-14 rounded-xl"
-              />
+            <div className="relative flex items-center justify-center w-full px-4 my-3 md:hidden h-[240px] sm:h-[320px]">
+              <div className="relative w-full h-full flex items-center justify-center overflow-hidden rounded-xl">
+                <img
+                  src={project.bgImage}
+                  alt={`${project.name}-bg-image`}
+                  className="absolute inset-0 object-cover w-full h-full brightness-50"
+                />
+                <img
+                  src={project.image}
+                  alt={`${project.name}-image`}
+                  className="relative z-10 max-w-[88%] max-h-[82%] object-contain rounded-lg shadow-2xl"
+                />
+              </div>
             </div>
           </a>
         ))}

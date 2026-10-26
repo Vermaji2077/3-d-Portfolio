@@ -10,16 +10,16 @@ const Hero = () => {
 robust backend systems & interactive
 digital platforms with clean code`;
   return (
-    <section id="home" className="flex flex-col justify-end min-h-screen">
+    <section id="home" className="relative flex flex-col justify-end min-h-screen overflow-hidden">
       <AnimatedHeaderSection
         subTitle={"Computer Science Student | Full-Stack Developer"}
-        title={"Nishant\u00A0Verma"}
+        title={"Nishant Verma"}
         text={text}
         textColor={"text-black"}
       />
       <figure
-        className="absolute inset-0 -z-50"
-        style={{ width: "100%", height: "100vh" }}
+        className="absolute inset-0 -z-50 pointer-events-none"
+        style={{ width: "100%", height: "100%" }}
       >
         <Canvas
           shadows
@@ -27,7 +27,7 @@ digital platforms with clean code`;
         >
           <ambientLight intensity={0.5} />
           <Float speed={0.5}>
-            <Planet scale={isMobile ? 0.7 : 1} />
+            <Planet scale={isMobile ? 0.65 : 1} />
           </Float>
           <Environment resolution={256}>
             <group rotation={[-Math.PI / 3, 4, 1]}>

@@ -15,19 +15,21 @@ const Contact = () => {
     "Let's Chat",
     "Get In Touch",
   ];
+
   useGSAP(() => {
     gsap.from(".social-link", {
-      y: 100,
+      y: 80,
       opacity: 0,
-      delay: 0.5,
-      duration: 1,
-      stagger: 0.3,
-      ease: "back.out",
+      delay: 0.3,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.out",
       scrollTrigger: {
         trigger: ".social-link",
       },
     });
   }, []);
+
   return (
     <section
       id="contact"
@@ -41,52 +43,60 @@ const Contact = () => {
           textColor={"text-white"}
           withScrollTrigger={true}
         />
-        <div className="flex px-1 sm:px-1 md:px-3 lg:px-6 font-light text-white uppercase lg:text-[32px] text-[26px] leading-none mb-10 ultra-small-screen">
-          <div className="flex flex-col w-full gap-10">
+        <div className="flex px-4 sm:px-6 md:px-8 lg:px-12 font-light text-white uppercase mb-12 sm:mb-16">
+          <div className="flex flex-col w-full gap-8 sm:gap-10">
             <div className="social-link">
-              <h2>E-mail</h2>
+              <h2 className="text-xl sm:text-2xl md:text-[28px] lg:text-[32px] tracking-wider mb-1">
+                E-mail
+              </h2>
               <div className="w-full h-px my-2 bg-white/30" />
-              <p className="flex items-center gap-3 text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">
-                <Icon icon="lucide:mail" className="size-6 text-white/60 flex-shrink-0" />
+              <p className="flex items-center gap-3 text-base sm:text-xl md:text-2xl lg:text-3xl tracking-wider lowercase">
+                <Icon icon="lucide:mail" className="size-5 sm:size-6 text-white/60 flex-shrink-0" />
                 <a
                   href="mailto:nishantv181@gmail.com"
-                  className="hover:text-white/80 transition-colors duration-200"
+                  className="hover:text-gold transition-colors duration-200 break-all sm:break-normal"
                 >
                   nishantv181@gmail.com
                 </a>
               </p>
             </div>
             <div className="social-link">
-              <h2>Phone</h2>
+              <h2 className="text-xl sm:text-2xl md:text-[28px] lg:text-[32px] tracking-wider mb-1">
+                Phone
+              </h2>
               <div className="w-full h-px my-2 bg-white/30" />
-              <p className="flex items-center gap-3 text-xl lowercase md:text-2xl lg:text-3xl">
-                <Icon icon="lucide:phone" className="size-6 text-white/60 flex-shrink-0" />
+              <p className="flex items-center gap-3 text-base sm:text-xl md:text-2xl lg:text-3xl lowercase">
+                <Icon icon="lucide:phone" className="size-5 sm:size-6 text-white/60 flex-shrink-0" />
                 <a
                   href="tel:+918980264859"
-                  className="hover:text-white/80 transition-colors duration-200"
+                  className="hover:text-gold transition-colors duration-200"
                 >
                   +91 8980264859
                 </a>
               </p>
             </div>
             <div className="social-link">
-              <h2>Resume</h2>
+              <h2 className="text-xl sm:text-2xl md:text-[28px] lg:text-[32px] tracking-wider mb-1">
+                Resume
+              </h2>
               <div className="w-full h-px my-2 bg-white/30" />
-              <p className="flex items-center gap-3 text-xl tracking-wider uppercase md:text-2xl lg:text-3xl">
-                <Icon icon="lucide:file-down" className="size-6 text-gold flex-shrink-0" />
+              <p className="flex items-center gap-3 text-base sm:text-xl md:text-2xl lg:text-3xl tracking-wider uppercase">
+                <Icon icon="lucide:file-down" className="size-5 sm:size-6 text-gold flex-shrink-0" />
                 <a
                   href="/Nishant_Verma_Resume.pdf"
                   download="Nishant_Verma_Resume.pdf"
-                  className="hover:text-gold transition-colors duration-200 tracking-widest text-lg md:text-xl font-light"
+                  className="hover:text-gold transition-colors duration-200 tracking-wider text-sm sm:text-base md:text-xl font-light break-all sm:break-normal"
                 >
                   Download Nishant_Verma_Resume.pdf
                 </a>
               </p>
             </div>
             <div className="social-link">
-              <h2>Social Media</h2>
+              <h2 className="text-xl sm:text-2xl md:text-[28px] lg:text-[32px] tracking-wider mb-1">
+                Social Media
+              </h2>
               <div className="w-full h-px my-2 bg-white/30" />
-              <div className="flex flex-wrap items-center gap-4 pt-2">
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
                 {socials.map((social, index) => (
                   <a
                     key={index}
@@ -95,9 +105,9 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     title={social.name}
                     aria-label={social.name}
-                    className="p-3 border border-white/20 rounded-full hover:border-white hover:bg-white/10 hover:scale-110 transition-all duration-300 text-white flex items-center justify-center"
+                    className="p-2.5 sm:p-3 border border-white/20 rounded-full hover:border-gold hover:text-gold hover:scale-110 transition-all duration-300 text-white flex items-center justify-center"
                   >
-                    <Icon icon={social.icon} className="size-6 md:size-7" />
+                    <Icon icon={social.icon} className="size-5 sm:size-6 md:size-7" />
                   </a>
                 ))}
               </div>
