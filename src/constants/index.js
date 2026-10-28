@@ -167,7 +167,7 @@ export const projects = [
   },
   {
     id: 6,
-    name: "Echo – Real-Time Chat & Platform",
+    name: "Echo – 3-d Portfolio",
     description:
       "A modern real-time messaging and social communication platform featuring instant messaging, responsive modern UI, secure authentication, and seamless interactive user experiences.",
     href: "https://echo-by-nish.vercel.app/",
