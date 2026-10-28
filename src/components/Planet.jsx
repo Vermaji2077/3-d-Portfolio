@@ -14,6 +14,7 @@ export function Planet(props) {
   const { nodes, materials } = useGLTF("/models/Planet.glb");
 
   useGSAP(() => {
+    if (!shapeContainer.current || !shperesContainer.current || !ringContainer.current) return;
     const tl = gsap.timeline();
     tl.from(shapeContainer.current.position, {
       y: 5,
