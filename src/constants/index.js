@@ -134,6 +134,53 @@ export const projects = [
       { id: 4, name: "MySQL" },
     ],
   },
+  {
+    id: 4,
+    name: "Modular Portfolio – Customizable Template",
+    description:
+      "A highly adaptable and modular portfolio template designed for various client needs, allowing easy customization and deployment with modular architecture and responsive design.",
+    href: "https://nish-modular-portfolio.vercel.app/",
+    image: "/assets/projects/project4.png",
+    bgImage: "/assets/backgrounds/blanket.jpg",
+    frameworks: [
+      { id: 1, name: "HTML5" },
+      { id: 2, name: "CSS3" },
+      { id: 3, name: "JavaScript" },
+      { id: 4, name: "React.js" },
+    ],
+  },
+  {
+    id: 5,
+    name: "Developer Portfolio – Personal Showcase",
+    description:
+      "My primary portfolio website showcasing my full-stack projects, technical certifications, and professional journey as a developer with responsive UI/UX and interactive 3D components.",
+    href: "https://vermaji2077.github.io/Portfolio/",
+    image: "/assets/projects/project5.png",
+    bgImage: "/assets/backgrounds/table.jpg",
+    frameworks: [
+      { id: 1, name: "React.js" },
+      { id: 2, name: "Tailwind CSS" },
+      { id: 3, name: "JavaScript" },
+      { id: 4, name: "HTML5" },
+      { id: 5, name: "CSS3" },
+    ],
+  },
+  {
+    id: 6,
+    name: "Echo – Real-Time Chat & Platform",
+    description:
+      "A modern real-time messaging and social communication platform featuring instant messaging, responsive modern UI, secure authentication, and seamless interactive user experiences.",
+    href: "https://echo-by-nish.vercel.app/",
+    image: "/assets/projects/project6.png",
+    bgImage: "/assets/backgrounds/curtains.jpg",
+    frameworks: [
+      { id: 1, name: "React.js" },
+      { id: 2, name: "Node.js" },
+      { id: 3, name: "Tailwind CSS" },
+      { id: 4, name: "Express.js" },
+      { id: 5, name: "JavaScript" },
+    ],
+  },
 ];
 
 export const socials = [

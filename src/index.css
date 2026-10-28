@@ -106,16 +106,11 @@
   }
 }
 
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 body {
   background: #e5e5e0;
   color: black;
   scroll-behavior: smooth;
+  overflow-x: hidden;
   font-family: var(--font-amiamie);
 }
 

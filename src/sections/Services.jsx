@@ -4,6 +4,8 @@ import { servicesData } from "../constants";
 import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
   const text = `Leveraging my computer science background and full-stack engineering expertise.
@@ -40,7 +42,7 @@ const Services = () => {
         <div
           ref={(el) => (serviceRefs.current[index] = el)}
           key={index}
-          className="sticky px-4 sm:px-6 md:px-8 lg:px-12 pt-6 pb-12 text-white bg-black border-t-2 border-white/30"
+          className="sticky px-1 sm:px-1 md:px-3 lg:px-6 pt-6 pb-12 text-white bg-black border-t-2 border-white/30 ultra-small-screen"
           style={
             isDesktop
               ? {
@@ -60,7 +62,7 @@ const Services = () => {
                 {service.items.map((item, itemIndex) => (
                   <div key={`item-${index}-${itemIndex}`} className="w-full">
                     <h3 className="flex w-full">
-                      <span className="mr-8 sm:mr-12 text-lg text-white/30 flex-shrink-0">
+                      <span className="mr-12 text-lg text-white/30 flex-shrink-0">
                         0{itemIndex + 1}
                       </span>
                       <span className="flex-1">{item.title}</span>
