@@ -1,9 +1,6 @@
 # 🌐 Nishant Verma — 3D Interactive Developer Portfolio
 
 <div align="center">
-  <img src="./public/images/thumbnail.png" alt="Nishant Verma Portfolio Thumbnail" width="100%" />
-
-  <br />
 
   [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
   [![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -53,46 +50,6 @@ Hi! I'm **Nishant Verma**, a Computer Science student at **ITM (SLS) Baroda Univ
 - **⚡ Built with Vite & React 19**: Ultra-fast hot module replacement, production chunk optimization, and modern React hooks.
 
 ---
-
-## 🚀 Featured Projects
-
-| Project | Description | Tech Stack | Links |
-| :--- | :--- | :--- | :--- |
-| **YourMart** | Full-stack grocery platform with product catalog, cart management, ordering, delivery tracking, OTP authentication, Stripe payments, and Inngest background workflows. | `React.js` `Node.js` `Express.js` `Neon Postgres` `Stripe` `Inngest` | [Live Demo ↗](https://your-mart-by-nish.vercel.app/) |
-| **DSA Visualizer & AI Chatbot** | Interactive web application for visualizing data structures and algorithms with an integrated chatbot for real-time student assistance. | `JavaScript` `Python` `HTML5` `CSS3` | [Live Demo ↗](https://vermaji2077.github.io/dsa/) |
-| **Aviation – Visa Consultancy** | Web platform for visa appointment scheduling, client consultancy management, user onboarding, and package tracking. | `React.js` `Node.js` `Express.js` `MySQL` | [Repository ↗](https://github.com/Vermaji2077/aviation) |
-| **Modular Portfolio** | Highly adaptable and modular portfolio template designed for rapid client customization, dynamic content rendering, and clean UI. | `React.js` `JavaScript` `HTML5` `CSS3` | [Live Demo ↗](https://nish-modular-portfolio.vercel.app/) |
-| **Echo** | Modern real-time communication platform featuring instant messaging, responsive modern UI, secure authentication, and seamless user experiences. | `React.js` `Node.js` `Tailwind CSS` `Express.js` | [Live Demo ↗](https://echo-by-nish.vercel.app/) |
-| **3D Developer Portfolio** | Awwwards-inspired developer portfolio featuring interactive 3D WebGL scenes, smooth Lenis scrolling, and GSAP animations. | `React.js` `Three.js` `GSAP` `Tailwind CSS` | [Live Demo ↗](https://vermaji2077.github.io/Portfolio/) · [Repository ↗](https://github.com/Vermaji2077/3-d-Portfolio) |
-
----
-
-## 🛠️ Technical Competencies
-
-### Frontend
-- **Languages & Frameworks**: JavaScript (ES6+), React.js, Vite, HTML5, CSS3
-- **Styling**: Tailwind CSS v4, Modern Responsive Layouts
-- **3D & Animation**: Three.js, React Three Fiber (`@react-three/fiber`), Drei, GSAP, ScrollTrigger, Framer Motion
-
-### Backend & Databases
-- **Runtime & Servers**: Node.js, Express.js, RESTful API Design
-- **Databases**: MySQL, Neon Serverless Postgres, MongoDB
-- **Workflows & Services**: Inngest (Event-Driven Background Jobs), Stripe Payments, Cloudinary, Brevo
-
-### Tooling & Environments
-- Git, GitHub, VS Code, Postman, Streamlit
-
----
-
-## 📜 Education & Certifications
-
-- **B.Tech in Computer Science & Engineering** — ITM (SLS) Baroda University *(June 2023 – May 2027)*
-- **Advanced Course in Emerging Technologies** — Edunet Foundation & SAP *(2025 – 2026)*
-  - Neural networks, deep learning model training, edge computing, SAP Analytics Cloud, and SAP ABAP on BTP.
-- **Code Unnati Program — AI & Foundations** — Edunet Foundation & SAP *(2024 – 2025)*
-  - Python, C++ OOP, conversational AI chatbots, and algorithmic problem-solving.
-- **Class XII (Science Stream)** — Mar Gregorios Memorial School *(March 2023)*
-
 ---
 
 ## 📦 Setup & Local Development
